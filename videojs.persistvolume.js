@@ -11,7 +11,7 @@
     define(['./video'], function(vjs){ factory(window, document, vjs) });
   // checking that module is an object too because of umdjs/umd#35
   } else if (typeof exports === 'object' && typeof module === 'object') {
-    factory(window, document, require('video.js'));
+    factory(window, document, require('videojs'));
   } else {
     factory(window, document, videojs);
   }

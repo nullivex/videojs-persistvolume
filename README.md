@@ -17,3 +17,11 @@ Add persistVolume to plugins object with one option, namespace.
 	    }
     }
 
+## Changelog
+
+### 0.2.0
+* Fix compatibility with Video.JS 6 to not throw warnings
+* Initial release from Nullivex
+
+### 0.1.3p1
+* Final release from `jbboehr/videojs-persistvolume`

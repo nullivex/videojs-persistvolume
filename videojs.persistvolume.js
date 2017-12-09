@@ -120,6 +120,8 @@
     });
   };
 
-  vjs[ (vjs.registerPlugin ? 'registerPlugin' : 'plugin') ]("persistvolume", volumePersister);
+  var registerFn = 'plugin';
+  if('function' === typeof vjs.registerPlugin) registerFn = 'registerPlugin';
+  vjs[registerFn]("persistvolume", volumePersister);
 
 });
